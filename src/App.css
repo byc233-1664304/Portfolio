@@ -1,0 +1,160 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #7A7281;
+}
+
+.cover{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+.header > a, .header > span{
+    text-decoration: none;
+}
+
+.hi{
+    position: absolute;
+    top: 1rem;
+    left: 5rem;
+    font-size: 3.5rem;
+}
+
+.yellow-background{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -2;
+    max-width: 100%;
+    height: auto;
+}
+
+.purple-background{
+    position: absolute;
+    top: 300px;
+    left: 0;
+    z-index: -2;
+    max-width: 100%;
+    height: auto;
+}
+
+.photo{
+    position: absolute;
+    top: 173px;
+    left: 116px;
+    z-index: -1;
+    max-width: 100%;
+    height: auto;
+}
+
+.about{
+    position: absolute;
+    top: 12rem;
+    left: 50rem;
+    margin-right: 8rem;
+    font-size: 1rem;
+    max-width: 100%;
+}
+
+.contact-button{
+    margin-top: 2rem;
+    height: 3rem;
+    width: 9rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: white;
+    background-color: #C9C0D3;
+}
+
+#skills{
+    display: flex;
+    flex-direction: column;
+    height: 60rem;
+    margin-top: 10rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    text-align: center;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 200px;
+}
+
+#skills > h1{
+    font-size: 3.5rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.hover-to-explore{
+    position: absolute;
+    top: 72rem;
+    right: 16rem;
+    height: 12%;
+    width: 12%;
+}
+
+.arrow{
+    position: absolute;
+    top: 77rem;
+    right: 24rem;
+    height: 8%;
+    width: 18%;
+}
+
+.skill-items{
+    display: flex;
+    flex-direction: row;
+    margin-left: 16rem;
+    margin-right: 16rem;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.programming.languages, .frontend, .backend, .database, .tools{
+    width: 5rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+.skill-category{
+    height: 3rem;
+}
+
+.skill-svg{
+    height: 0;
+    width: 0;
+    margin: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.programming.languages:hover .skill-svg,
+.frontend:hover .skill-svg,
+.backend:hover .skill-svg,
+.database:hover .skill-svg,
+.tools:hover .skill-svg {
+    height: 5rem;
+    width: 5rem;
+    margin-bottom: 2rem;
+    opacity: 1;
+    transform: scale(1);
+}
