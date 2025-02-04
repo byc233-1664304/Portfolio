@@ -1,19 +1,23 @@
+import { useState } from 'react';
+
 import YellowBackground from '../assets/yellow.png';
 import PurpleBackground from '../assets/purple.png';
 import Photo from '../assets/photo.png';
 
 function Cover() {
+    const [popupOpen, setPopupOpen] = useState(false);
+
     return <div className='cover'>
         <img src={YellowBackground} name='yellow-background' className='yellow-background'/>
 
         <div className='header'>
-            <a>Github</a>
+            <a href='https://github.com/byc233-1664304'>Github</a>
             <span>|</span>
             <a href='#skills'>Skills</a>
             <span>|</span>
-            <a>Work Experience</a>
+            <a href='#work-experience'>Work Experience</a>
             <span>|</span>
-            <a>Contact Me</a>
+            <a href='#contact'>Contact Me</a>
         </div>
 
         <h1 className='hi'>Hi, I'm Kathy...</h1>
@@ -44,7 +48,15 @@ function Cover() {
                 ever-evolving tech landscape. Let's connect and create something amazing!
             </p>
 
-            <button className='contact-button'>Contact Me</button>
+            <button className='contact-button' onClick={() => {setPopupOpen(true)}}>Contact Me</button>
+            {
+                popupOpen && <div className="popup-overlay" onClick={() => setPopupOpen(false)}>
+                    <div className="popup-content" onClick={(e) => e.stopPropagation()}>
+                        <div>email: {import.meta.env.VITE_MY_EMAIL}</div>
+                        <div>phone: {import.meta.env.VITE_MY_NUMBER}</div>
+                    </div>
+                </div>
+            }
         </div>
 
         <img src={Photo} name='photo' className='photo'/>

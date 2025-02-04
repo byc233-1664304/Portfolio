@@ -1,5 +1,3 @@
-import Hover from '../assets/hover.png';
-import Arrow from '../assets/arrow.png';
 import HtmlSvg from '../assets/html.svg';
 import CssSvg from '../assets/css.svg';
 import JsSvg from '../assets/js.svg';
@@ -64,8 +62,6 @@ function Skills(){
 
     return <div id='skills'>
         <h1>Skills</h1>
-        <img src={Hover} name='hover-to-explore' className='hover-to-explore' />
-        <img src={Arrow} name='arrow' className='arrow' />
         <div className='skill-items'>
             {
                 skills.map((skill) => {
