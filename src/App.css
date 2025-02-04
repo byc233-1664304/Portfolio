@@ -29,11 +29,7 @@ body, html{
     font-size: 1rem;
 }
 
-.header > a, .header > span{
-    text-decoration: none;
-}
-
-.header > a:visited{
+.header > a, .header > span, .header > a:visited{
     color: #7A7281;
     text-decoration: none;
 }
