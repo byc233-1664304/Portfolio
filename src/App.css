@@ -323,7 +323,6 @@ textarea{
     }
 
     .about {
-        position: relative;
         top: 6rem;
         left: 2rem;
         margin-right: 2rem;
@@ -428,7 +427,6 @@ textarea{
     }
 
     .about {
-        position: relative;
         top: 4rem;
         left: 1rem;
         margin-right: 1rem;
