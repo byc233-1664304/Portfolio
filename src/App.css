@@ -125,7 +125,7 @@ body, html{
 #skills{
     display: flex;
     flex-direction: column;
-    height: 62rem;
+    min-height: fit-content;
     margin-top: 16rem;
     margin-left: 5rem;
     margin-right: 5rem;
@@ -138,38 +138,40 @@ body, html{
 #skills > h1{
     font-size: 3.5rem;
     margin-top: 4rem;
-    margin-bottom: 1rem;
 }
 
-.skill-items{
-    display: flex;
-    flex-direction: row;
-    margin-left: 8rem;
-    margin-right: 8rem;
-    justify-content: space-between;
-    font-size: 2rem;
+.skill-items {
+    display: grid;
+    grid-template-columns: 12rem auto; /* First column fixed at 12rem, second for SVGs */
+    margin-left: 4rem;
+    margin-bottom: 4rem;
+    gap: 1.5rem 4rem; /* Row and column gaps */
+    align-items: center; /* Vertically align category names and SVGs */
 }
 
-.programming.languages, .frontend, .backend, .database, .tools{
-    display: flex;
-    flex-direction: column;
-    width: 20rem;
+.skill-category {
     font-size: 1.5rem;
-    align-items: center;
+    white-space: normal; /* Allow text to wrap to multiple lines */
+    width: 12rem; /* Fixed width for category name box */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    overflow: hidden; /* Prevent text overflow */
+    line-height: 1.2; /* Adjust line height for better readability */
+    height: 3.6rem; /* Fixed height to accommodate two lines of text */
+    display: flex;
+    align-items: center; /* Vertically center text within the box */
+    text-align: left;
 }
 
-.programming.languages{
-    margin-right: 2rem;
-}
-
-.skill-category{
-    height: 3rem;
+.skill-items-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow SVGs to wrap to the next line if needed */
+    gap: 1rem; /* Add space between SVGs */
 }
 
 .skill-svg{
     height: 5rem;
     width: 5rem;
-    margin-bottom: 2rem;
+    margin-left: 2.5rem;
 }
 
 /* Work Experience */
@@ -348,7 +350,6 @@ textarea{
     }
 
     #skills {
-        height: 46rem;
         margin-top: 12rem;
         margin-left: 2rem;
         margin-right: 2rem;
@@ -364,20 +365,19 @@ textarea{
     .skill-items {
         margin-left: 2rem;
         margin-right: 2rem;
+        gap: 1rem 2rem;
     }
 
     .skill-category{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        width: 10rem;
+        height: auto;
     }
 
     .skill-svg{
-        height: 2.5rem;
-        width: 2.5rem;
-    }
-
-    .programming.languages, .frontend, .backend,.database, .tools{
-        width: 100%;
-        margin-right: 0;
+        height: 3rem;
+        width: 3rem;
+        margin-left: 1.5rem;
     }
 
     #work-experience {
@@ -443,7 +443,6 @@ textarea{
     }
 
     #skills {
-        height: 38rem;
         margin-top: 6rem;
         margin-left: 1rem;
         margin-right: 1rem;
@@ -456,20 +455,21 @@ textarea{
     .skill-items {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
+        gap: 1rem;
+        grid-template-columns: 8rem auto;
     }
 
     .skill-category {
-        font-size: 0.7rem;
-        width: 3rem;
-    }
-
-    .programming.languages, .frontend, .backend,.database, .tools{
-        margin-left: 0.5rem;
+        font-size: 0.9rem;
+        width: 8rem;
+        height: auto;
+        line-height: 1.1;
     }
 
     .skill-svg {
-        height: 2rem;
-        width: 2rem;
+        height: 3rem;
+        width: 3rem;
+        margin-left: 1rem;
     }
 
     #work-experience > h1, #contact > h1 {
