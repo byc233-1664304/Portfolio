@@ -108,6 +108,10 @@ function WorkExperience() {
                     using <strong>CSS Grid</strong>, <strong>Flexbox</strong> and <strong>Material UI</strong>.
                 </p>,
                 <p>
+                    Developed <strong>mobile-friendly application</strong> using <strong>React Native</strong>, 
+                    ensuring seamless performance on both iOS and Android devices.
+                </p>,
+                <p>
                     Developed an intuitive fraud and crime reporting form with <strong>React</strong>, 
                     leveraging <strong>Redux</strong> for state management to streamline and improve user experience.
                 </p>,

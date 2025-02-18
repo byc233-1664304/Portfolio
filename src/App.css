@@ -2,6 +2,7 @@ body, html{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    overflow-y: scroll;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #7A7281;
     background-image: url('./assets/aliceblue.png'), url('./assets/yellowb.png');

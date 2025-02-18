@@ -25,36 +25,41 @@ function Cover() {
         <div className='about'>
             <h2>About Me</h2>
             <p>
-                I'm a <strong>Full-Stack Software Developer</strong> with <strong>8 years of experience</strong> 
-                building scalable, hight-performance applications that enhance user experience and drive impactful 
-                decision-making. My expertise lies in <strong>React, Redux, Node.js, and MongoDB</strong>, crafting 
-                responsive, data-driven solutions for complex challenges.
+                I'm a passionate <strong>Full-Stack Software Developer</strong> with <strong>8 years of experience</strong> 
+                specializing in <strong>React</strong> and <strong>React Native</strong> application development. I 
+                thrive on building responsive, high-performance web and mobile applications, leveraging modern technologies 
+                to create seamless user experiences.
             </p>
 
             <p>
-               At <strong>Two Six Technologies</strong>, I develop mission-critical applications that leverage 
-               <strong>real-time data visualization, geospatial mapping, and automation</strong> to support security and 
-               defense operations. I specialize in transforming Figma wireframes into <strong>dynamic, interactive interfaces</strong> 
-               using <strong>React, Material UI, and WebSockets</strong>. My work optimizes 
-               <strong>state management, API integrations, and performance</strong> to ensure seamless data flow and real-time 
-               responsiveness.
+               With a strong foundation in <strong>JavaScript, TypeScript, and Node.js</strong>, I have expertise in developing 
+               <strong>scalable front-end architectures</strong>, optimizing web performance, and implementing secure, efficient 
+               <strong>RESTful APIs</strong>. My experience spans across industries, from <strong>cyber defense</strong> to 
+               <strong>medical research</strong> and <strong>public service</strong>, where I've contributed to mission-critical 
+               applications.
             </p>
 
             <p>
-                Previously, at <strong>AAMC</strong> amnd <strong>King County Housing Authority</strong>, I designed 
-                <strong>custom dashboards, filtering systems, and notification features</strong>, improving data accessibility 
-                for medical researchers and housing authorities. My background in 
-                <strong>RESTful API development, WebSockets, and security best practices</strong> enables me to build applications 
-                that are both <strong>efficient and secure</strong>.
+                I excel at designing <strong>intuitive UIs</strong> using <strong>Material UI, Tailwind CSS, and SASS</strong>, 
+                ensuring accessibility and consistency across platforms. Additionally, I have deep experience with 
+                <strong>Redux, Context API, React Hooks, and microfrontend architectures</strong>, allowing me to build 
+                modular and maintainable codebases.
             </p>
 
             <p>
-                Beyond coding, I'm a firm believer in <strong>collaboration, best practices, and continuous learning</strong>.
-                Whether it's <strong>mentoring teams, optimizing performance, or architecting scalable microservice</strong>, 
-                I thrive in fast-paced environments where innovation meets impact.
+                Beyond front-end development, I specialize in <strong>React Native</strong>, crafting 
+                <strong>cross-platform mobile applications</strong> with native module integration, enabling seamless 
+                performance on iOS and Android. My back-end proficiency includes <strong>Node.js, Express.js, and MongoDB</strong>, 
+                with a focus on <strong>microservice architecture</strong> and <strong>serverless functions (AWS, Firebase Functions)</strong>.
             </p>
 
-            <p>I'm always open to <strong>new challenges and exciting opportunities</strong>. Let's build something great together!</p>
+            <p>
+                I am dedicated to delivering <strong>efficient, accessible, and scalable solutions</strong> that drive 
+                real-world impact. Always eager to learn and collaborate, I take pride in writing clean, maintainable 
+                code and continuously refining my skill set.
+            </p>
+
+            <p>Let's connect and build something amazing!</p>
 
             <button className='contact-button' onClick={() => {setPopupOpen(true)}}>Contact Me</button>
             
