@@ -57,9 +57,12 @@ function Cover() {
             <p>I'm always open to <strong>new challenges and exciting opportunities</strong>. Let's build something great together!</p>
 
             <button className='contact-button' onClick={() => {setPopupOpen(true)}}>Contact Me</button>
+            
             {
-                popupOpen && <div className="popup-overlay" onClick={() => setPopupOpen(false)}>
-                    <div className="popup-content" onClick={(e) => e.stopPropagation()}>
+                popupOpen &&  <div className="popup-overlay" onClick={() => setPopupOpen(false)}>
+                    <div className="popup-content"
+                        onClick={(e) => e.stopPropagation()}
+                    >
                         <div>email: {import.meta.env.VITE_MY_EMAIL}</div>
                         <div>phone: {import.meta.env.VITE_MY_NUMBER}</div>
                     </div>

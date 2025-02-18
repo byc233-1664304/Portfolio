@@ -10,6 +10,8 @@ body, html{
     background-repeat: no-repeat;
 }
 
+
+/* Cover */
 .cover{
     position: relative;
     width: 100%;
@@ -91,13 +93,15 @@ body, html{
 }
 
 .popup-overlay{
-    position: absolute;
-    top: 17rem;
-    left: -0.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
     z-index: 999;
 }
 
@@ -113,41 +117,27 @@ body, html{
     color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     min-width: 12rem;
+    z-index: 1000;
 }
 
+/* Skills */
 #skills{
     display: flex;
     flex-direction: column;
-    height: 60rem;
-    margin-top: 18rem;
+    height: 62rem;
+    margin-top: 16rem;
     margin-left: 5rem;
     margin-right: 5rem;
     text-align: center;
     background-color: aliceblue;
     border: none;
-    border-radius: 200px;
+    border-radius: 100px;
 }
 
 #skills > h1{
     font-size: 3.5rem;
-    margin-top: 5rem;
-    margin-bottom: 2rem;
-}
-
-.hover-to-explore{
-    position: absolute;
-    top: 72rem;
-    right: 16rem;
-    height: 12%;
-    width: 12%;
-}
-
-.arrow{
-    position: absolute;
-    top: 77rem;
-    right: 24rem;
-    height: 8%;
-    width: 18%;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
 }
 
 .skill-items{
@@ -181,6 +171,7 @@ body, html{
     margin-bottom: 2rem;
 }
 
+/* Work Experience */
 #work-experience{
     text-align: center;
     margin-top: 8rem;
@@ -215,7 +206,7 @@ body, html{
 
 .exp-overview{
     margin-top: 4rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .exp-overview > h2, .exp-overview > h3 {
@@ -257,7 +248,6 @@ body, html{
     justify-content: space-between;
     width: 80%;
     margin-top: auto;
-    margin-bottom: 1rem;
 }
 
 .exp-tab > button{
@@ -267,6 +257,7 @@ body, html{
     color: #7A7281;
 }
 
+/* Contact */
 #contact{
     display: flex;
     flex-direction: column;
@@ -320,4 +311,183 @@ textarea{
     background-color: #C9C0D3;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For Tablets (iPad) */
+@media (max-width: 1384px) {
+    .hi{
+        font-size: 2.5rem;
+        left: 2rem;
+    }
+
+    .about {
+        top: 6rem;
+        left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .photo {
+        display: none;
+    }
+
+    .purple-background{
+        top: 200px
+    }
+
+    .contact-button{
+        background-color: #FDF9EE;
+        color: #7A7281;
+    }
+
+    .popup-content{
+        background-color: #FDF9EE;
+        color: #7A7281;
+    }
+
+    #skills {
+        height: 46rem;
+        margin-top: 12rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        border-radius: 100px;
+    }
+
+    #skills > h1 {
+        font-size: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .skill-items {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .skill-category{
+        font-size: 1.5rem;
+    }
+
+    .skill-svg{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .programming.languages, .frontend, .backend,.database, .tools{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #work-experience {
+        margin-top: 4rem;
+    }
+
+    #work-experience > h1, #contact > h1{
+        font-size: 3rem;
+    }
+
+    .exps {
+        gap: 2rem;
+    }
+
+    .exp-card {
+        width: 80%;
+        height: 28rem;
+    }
+
+    .contact-form {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .message-wrapper {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .sender-info {
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+}
+
+/* For phones */
+@media (max-width: 768px) {
+    .header {
+        top: 1rem;
+        right: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .hi {
+        font-size: 2rem;
+        left: 1rem;
+    }
+
+    .about {
+        top: 4rem;
+        left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .photo {
+        top: 80px;
+        left: 20px;
+    }
+
+    .purple-background {
+        top: 150px;
+    }
+
+    #skills {
+        height: 38rem;
+        margin-top: 26rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    #skills > h1, #work-experience > h1, #contact > h1 {
+        font-size: 2rem;
+    }
+
+    .skill-items {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .skill-category {
+        font-size: 0.7rem;
+        width: 3rem;
+    }
+
+    .programming.languages, .frontend, .backend,.database, .tools{
+        margin-left: 0.5rem;
+    }
+
+    .skill-svg {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    #work-experience > h1, #contact > h1 {
+        font-size: 2.5rem;
+    }
+
+    .exp-card {
+        width: 90%;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+
+    .message-wrapper {
+        margin-bottom: 5rem;
+    }
+
+    textarea {
+        height: 15rem;
+    }
 }
