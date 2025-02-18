@@ -70,9 +70,9 @@ body, html{
 
 .about{
     position: absolute;
-    top: 12rem;
-    left: 50rem;
-    margin-right: 8rem;
+    top: 8rem;
+    left: 46rem;
+    margin-right: 5rem;
     font-size: 1rem;
     max-width: 100%;
 }
