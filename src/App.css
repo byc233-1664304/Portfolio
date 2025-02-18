@@ -323,6 +323,7 @@ textarea{
     }
 
     .about {
+        position: relative;
         top: 6rem;
         left: 2rem;
         margin-right: 2rem;
@@ -427,6 +428,7 @@ textarea{
     }
 
     .about {
+        position: relative;
         top: 4rem;
         left: 1rem;
         margin-right: 1rem;
@@ -443,7 +445,7 @@ textarea{
 
     #skills {
         height: 38rem;
-        margin-top: 26rem;
+        margin-top: 6rem;
         margin-left: 1rem;
         margin-right: 1rem;
     }
